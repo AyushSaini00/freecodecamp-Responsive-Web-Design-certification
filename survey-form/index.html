@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+    <div class="container"> 
+        <header class="header">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for letting us know about your Social Networking Websites Preferences</p>
+        </header>    
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your Name" required>
+            </div>  
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+            </div> 
+            <div class="form-group">
+                <label id="number-label" for="number">Age<span>(optional)</span></label>
+                <input type="number" name="age" id="number" class="form-control" min="10" max="100" placeholder="Age" required>
+            </div> 
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="student">Student</option>
+                    <option value="fulljob">Full time job</option>
+                    <option value="partjob">Part time job</option>
+                    <option value="other">Other</option>
+                    <option value="prefernot">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Which of the following  social networking websites do you currently have an account with?<span class="clue">(Check all that apply)</span></p>
+                <label>
+                    <input type="checkbox" value="instagram" name="prefer" class="input-checkbox">
+                    Instagram
+                </label>
+                <label>
+                    <input type="checkbox" value="facebook" name="prefer" class="input-checkbox">
+                    Facebook
+                </label>
+                <label>
+                    <input type="checkbox" value="twitter" name="prefer" class="input-checkbox">
+                    Twitter
+                </label>
+                <label>
+                    <input type="checkbox" value="linkedin" name="prefer" class="input-checkbox">
+                    Linkedin
+                </label>
+                <label>
+                    <input type="checkbox" value="googleplus" name="prefer" class="input-checkbox">
+                    Google+
+                </label>
+                 <label>
+                    <input type="checkbox" value="other" name="prefer" class="input-checkbox">
+                    Other<span class="clue"> (please specify)</span>
+                </label>
+                <input type="text" id="othersbox" name="others">
+                
+            </div>
+            <div class="form-group">
+                <p>In a typical week, how likely are you to use social networking websites?</p>
+                <label>
+                    <input type="radio" class="input-radio" name="usingtime" value="1">
+                    Extemely likely
+                </label>
+                <label>
+                    <input type="radio" class="input-radio" name="usingtime" value="2">
+                    Very likely
+                </label>
+                <label>
+                    <input type="radio" class="input-radio" name="usingtime" value="3">
+                    Moderately likely
+                </label>
+                <label>
+                    <input type="radio" class="input-radio" name="usingtime" value="4">
+                    Slightly likely
+                </label>
+                <label>
+                    <input type="radio" class="input-radio" name="usingtime" value="5">
+                    Not at all likely
+                </label>
+            </div>
+            <div class="form-group">
+                <p>In a typical week, Which of the following social networking websites do you use most often?</p>
+                <label>
+                    <input type="radio" class="input-radio" name="mostuse" value="1">
+                    Facebook
+                </label>
+                <label>
+                    <input type="radio" class="input-radio" name="mostuse" value="2">
+                    Instagram
+                </label>
+                <label>
+                    <input type="radio" class="input-radio" name="mostuse" value="3">
+                    Twitter
+                </label>
+                <label>
+                    <input type="radio" class="input-radio" name="mostuse" value="4">
+                    Linkedin
+                </label>
+                <label>
+                    <input type="radio" class="input-radio" name="mostuse" value="5">
+                    Other<span class="clue"> (please specify)</span>
+                </label>
+                <input type="text" id="othersbox" name="others">
+            </div>
+            <div class="form-group">
+               <p>Please, Tell us why you use the selected website most often?</p>
+                <textarea id="comments" name="comment" class="input-textarea" placeholder="Write your response here ..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                Submit
+                </button>
+            </div>
+        </form>
+        <footer>Made by Ayush Saini</footer>
+    </div>     
+    </body>
+</html>
